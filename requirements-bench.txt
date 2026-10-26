@@ -1,0 +1,5 @@
+-r requirements.txt
+pycryptodome>=3.19
+tenseal>=0.3.14
+matplotlib>=3.7
+pytest>=7.4
