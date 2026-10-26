@@ -129,7 +129,7 @@ tests/                 pytest suite
 ## Differences from the original design
 
 Compared with the original B.Tech design, this implementation uses a small centered-binomial error
-(the original's wider Gaussian noise made decryption fail roughly 5% of the time at these parameters),
+(simulating the original's wider Gaussian noise at these parameters gave about 0.4% decryption failures; this one gives none in tens of thousands of trials),
 a compact uint16 + zlib ciphertext format instead of `pickle` (unsafe to load from untrusted storage),
 a CSPRNG (`os.urandom`) for all sampling, environment-based DB credentials, and a SQLite backend.
 
